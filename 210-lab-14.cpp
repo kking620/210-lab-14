@@ -39,40 +39,33 @@ class Color
         {
             cout << "Red Value: " << Red << endl;
             cout << "Blue Value: " << Blue << endl;
-            cout << "Green Value: " << Green << endl;
+            cout << "Green Value: " << Green << endl << endl;
         }
 
 };
 
-void print(Color);
-
 int main()
 {
+    cout << "Color #1\n";
     Color color1;
     color1.setRed(155);
     color1.setBlue(76);
     color1.setGreen(103);
     color1.print();
-    print(color1);
 
+    cout << "Color #2\n";
     Color color2;
-    color2.setRed(155);
-    color2.setBlue(76);
-    color2.setGreen(103);
+    color2.setRed(203);
+    color2.setBlue(43);
+    color2.setGreen(12);
     color2.print();
-    print(color2);
 
+    cout << "Color #3\n";
     Color color3;
-    color3.setRed(155);
-    color3.setBlue(76);
-    color3.setGreen(103);
+    color3.setRed(6);
+    color3.setBlue(35);
+    color3.setGreen(204);
     color3.print();
-    print(color3);
 
     return 0;
-}
-
-void print(Color c)
-{
-    cout << c.getRed() << c.getBlue() << c.getGreen() << endl << endl;
 }
